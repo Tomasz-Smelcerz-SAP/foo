@@ -42,19 +42,19 @@ func (n *Node) SetRightChild(child *Node) {
 	n.rhc = child
 }
 
-func (n *Node) ToString() string {
+func (n *Node) String() string {
 	if n == nil {
 		return "nil"
 	}
 	var leftSubtree string
 	if n.lhc != nil {
-		leftSubtree = n.lhc.ToString()
+		leftSubtree = n.lhc.String()
 	}
 
 	var rightSubtree string
 	if n.rhc != nil {
-		rightSubtree = n.rhc.ToString()
+		rightSubtree = n.rhc.String()
 	}
 
-	return "(" + leftSubtree + " " + strconv.FormatInt(int64(n.value), 16) + " " + rightSubtree + ")"
+	return "[" + leftSubtree + "~" + strconv.FormatInt(int64(n.value), 16) + "~" + rightSubtree + "]"
 }
