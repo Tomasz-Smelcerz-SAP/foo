@@ -56,5 +56,5 @@ func (n *Node) String() string {
 		rightSubtree = n.rhc.String()
 	}
 
-	return "[" + leftSubtree + "~" + strconv.FormatInt(int64(n.value), 16) + "~" + rightSubtree + "]"
+	return "{" + leftSubtree + "/" + strconv.FormatInt(int64(n.value), 16) + "\\" + rightSubtree + "}"
 }
