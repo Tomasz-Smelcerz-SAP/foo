@@ -6,10 +6,6 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	Tree := atypes.NewNode(42)
-	Tree.SetLeftChild(atypes.NewNode(21))
-	Tree.SetRightChild(atypes.NewNode(84))
-	//TODO: Uncomment the next line to print the tree structure
-	//fmt.Println("Tree structure:", Tree.ToString())
-	fmt.Println("We can't print the tree structure yet :(")
+	Tree := atypes.T(atypes.L(21), 42, atypes.L(84))
+	fmt.Println("Tree structure:", Tree.ToString())
 }
