@@ -4,7 +4,6 @@ import (
 	"strconv"
 )
 
-
 type Node struct {
 	lhc *Node
 	rhc *Node
@@ -12,6 +11,22 @@ type Node struct {
 }
 
 func NewNode(value int) *Node {
+	return &Node{
+		lhc:   nil,
+		rhc:   nil,
+		value: value,
+	}
+}
+
+func T(left *Node, value int, right *Node) *Node {
+	return &Node{
+		lhc:   left,
+		rhc:   right,
+		value: value,
+	}
+}
+
+func L(value int) *Node {
 	return &Node{
 		lhc:   nil,
 		rhc:   nil,
@@ -27,9 +42,19 @@ func (n *Node) SetRightChild(child *Node) {
 	n.rhc = child
 }
 
-func (n *Node) toString() string {
+func (n *Node) ToString() string {
 	if n == nil {
 		return "nil"
 	}
-	return "(" + n.lhc.toString() + " " + strconv.FormatInt(int64(n.value), 16) + " " + n.rhc.toString() + ")"
+	var leftSubtree string
+	if n.lhc != nil {
+		leftSubtree = n.lhc.ToString()
+	}
+
+	var rightSubtree string
+	if n.rhc != nil {
+		rightSubtree = n.rhc.ToString()
+	}
+
+	return "(" + leftSubtree + " " + strconv.FormatInt(int64(n.value), 16) + " " + rightSubtree + ")"
 }
