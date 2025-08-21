@@ -2,3 +2,5 @@ github.com/Tomasz-Smelcerz-SAP/foo/alice/v2 v2.0.3 h1:MPrfJBUJB+2Jbq4xoEeRKEgar8
 github.com/Tomasz-Smelcerz-SAP/foo/alice/v2 v2.0.3/go.mod h1:xlGCNJJixOO/OYeLYl4TqYG87gNZIE6DqwYBH8jlrXU=
 github.com/Tomasz-Smelcerz-SAP/foo/alice/v2 v2.0.4 h1:YQiIU1KIIs2SDH3zOpZyhQItlzsNvwZdVoB5tb/fbXk=
 github.com/Tomasz-Smelcerz-SAP/foo/alice/v2 v2.0.4/go.mod h1:xlGCNJJixOO/OYeLYl4TqYG87gNZIE6DqwYBH8jlrXU=
+github.com/Tomasz-Smelcerz-SAP/foo/alice/v3 v3.0.0 h1:9n3hxxRfY++ZeQlWEUwieDqOk7k+x+Tg5s3SUARRrnM=
+github.com/Tomasz-Smelcerz-SAP/foo/alice/v3 v3.0.0/go.mod h1:dxD0uGtxRX215x3PNW+CC4WaGlZXO7TeMzr5C8wBhQY=
