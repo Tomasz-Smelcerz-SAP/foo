@@ -1,7 +1,7 @@
 package main
 import (
 	"fmt"
-	atypes "github.com/Tomasz-Smelcerz-SAP/foo/alice/v2/pkg/types"
+	atypes "github.com/Tomasz-Smelcerz-SAP/foo/alice/v2/v2/pkg/types"
 )
 
 func main() {
